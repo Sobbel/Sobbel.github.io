@@ -1,0 +1,383 @@
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D8D8C2;
+}
+
+/* Styling for nav-bar listen */
+nav ul {
+    margin: 0;
+}
+
+
+/* Styling for headeren */
+header {
+    background-color: #2F4858;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+
+/* Styling for nav-bar lenkene */
+nav a {
+    display: block;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Endrer farge på linkene i nav-baren når man er over dem med pila */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+p {
+    color: #2F4858;
+}
+
+h1 {
+    color: #2F4858;
+    font-size: 7em;
+}
+
+h2 {
+    color: #2F4858;
+}
+
+h3 {
+    color: #2F4858;
+}
+
+/* Grid - Footer */
+footer {
+    display: grid;
+    background-color: #2F4858;
+    padding: 30px;
+    border: 30px;
+    margin-top: 20px;
+}
+
+.footerleft {
+    grid-column: 1/3;
+}
+
+.footermiddle {
+    grid-column: 3/6;
+}
+
+.footerright {
+    grid-column: 6/9;
+}
+
+/* Skriften i footeren*/
+footer p {
+    color: white;
+}
+
+/* Linken i footeren */
+.footermiddle a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+}
+
+/* Endrer farge på linken i footeren når man er over den med pila */
+footer a:hover {
+    color: #0696f0;
+}
+
+/* Grid til Index/Hjem-siden */
+.grid-container {
+    display: grid;
+    width: 100%;
+    +
+}
+
+.top-box {
+    grid-column: 1/3;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    background-color: #D8D8C2;
+
+}
+
+.second-box {
+    grid-column: 1/3;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+
+.third-left-box {
+    grid-column: 1/2;
+    border: 20px solid #D8D8C2;
+    background-color: #ADBCA8;
+    padding: 30px;
+    text-align: center;
+}
+
+.third-right-box {
+    grid-column: 2/3;
+    border: 20px solid #D8D8C2;
+    background-color: #ADBCA8;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Forside bildet */
+/* Kilde: https://www.oslomet.no/studier/studenthistorier/videregaende-student */
+.second-box>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid til kantine-siden */
+#grid-container-kantine {
+    display: grid;
+    max-width: 800px;
+    margin: auto;
+}
+
+.top-box-kantine {
+    grid-column: 1/3;
+    padding: 7px;
+}
+
+.second-box-kantine {
+    grid-column: 1/3;
+    padding: 7px;
+}
+
+.third-left-box-kantine {
+    grid-column: 1/2;
+    background-color: #ADBCA8;
+    padding: 20px;
+}
+
+.third-right-box-kantine {
+    grid-column: 2/3;
+    padding: 20px;
+    background-color: #ADBCA8;
+}
+
+.fourth-box-kantine {
+    grid-column: 1/3;
+    padding: 7px;
+    text-align: left;
+}
+
+/* Bildet på kantine-siden */
+/* Kilde: https://khrono.no/pris-hioa-kantine/studentene-betaler-mest-i-kantinene/184666 */
+.third-left-box-kantine>figure>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Flexbokser til Tilgjengelighet og temaside */
+.container-tilgjengelighet-temaside {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+}
+
+.top-box-tilgjengelighet-temaside {
+    padding: 7px;
+}
+
+.second-box-tilgjengelighet-temaside {
+    padding: 7px;
+}
+
+.third-box-tilgjengelighet-temaside {
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+.fourth-box-tilgjengelighet-temaside {
+    background-color: #ADBCA8;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.fifth-box-tilgjengelighet-temaside {
+    padding: 7px;
+}
+
+/* Bildet på temasiden */
+/* Kilde: https://unsplash.com/photos/people-protesting-inside-building-6Xjl5-Xq4g4 */
+.third-box-tilgjengelighet-temaside img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+/* Bildeboks på tilgjengelighet siden */
+.bildebox-fourth-box-tilgjengelighet-temaside {
+    background-color: #ADBCA8;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+
+/* Bildene i bildeboksen på tilgjengelighet siden */
+.bildebox-fourth-box-tilgjengelighet-temaside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2px;
+}
+
+/* Overskrift på temaside, kantine og tilgjengelighet */
+.overskrift-temaside-kantine-tilgjengelighet {
+    color: #2F4858;
+    font-size: 40px;
+    margin-bottom: 7px;
+}
+
+/* Stylingen på linkene med class-link-text */
+.link-text a {
+    color: #0696f0;
+    text-decoration: none;
+    display: inline;
+}
+
+/* Linkene med class-link-text får en linje under seg når man tar pilen over */
+.link-text:hover {
+    text-decoration: underline;
+}
+
+/* styiling på undertekstene på bilder */
+figure {
+    margin: auto;
+}
+
+figcaption {
+    color: #2F4858;
+    font-style: italic;
+    padding: 2px;
+}
+
+/* På skjermer under eller lik 635px så går kollonnene på siden under hverandre, 
+overskriften på forsiden blir mindre og boksen med overskriften på forsiden blir mindre  */
+@media (max-width: 635px) {
+
+    .third-left-box,
+    .third-right-box,
+    .third-left-box-kantine,
+    .third-right-box-kantine {
+        grid-column: 1/3;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .top-box {
+        height: 175px;
+        padding: 40px;
+    }
+}
+
+/* På skjermer under eller lik 760px så går kollonnene i footeren under hverandre,
+ og footeren til venstre og footeren i midten får en større margin under seg for å lage mellomrom mellom boksene */
+@media (max-width: 760px) {
+
+    .footerleft,
+    .footermiddle,
+    .footerright {
+        grid-column: 1/3;
+    }
+
+    .footerleft,
+    .footermiddle {
+        margin-bottom: 20px;
+    }
+}
+
+/* Hamburger-meny */
+/* Kilde: Lecture notes:CompletePage_02_Simple-Burger-menu */
+#burger-toggle {
+    display: none;
+}
+
+/* På skjermer over eller lik 580px så får linkene i nav baren padding på 20px,
+ menyen skal bli en flex-box til med linkene til venstre i boksen og de skal bli skyvet inn -15px,
+  linkene skal også ha en padding på 1rem */
+@media (min-width:580px) {
+    nav a {
+        padding: 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        list-style-type: none;
+        margin-left: -15px;
+    }
+
+    .menu li {
+        padding-right: 1rem;
+    }
+}
+
+/* På skjermer under eller lik 579px så skal bilde av burgermeny-ikonet vises, og menyen kommer ut når ikonet trykkes på. 
+   Høyde og bredde er 60px. Vi fjerner høyden til menu li for å skjule den listen som var der fra før. 
+   Når burgermeny-ikonet er trykket på så blir visningen av hver menylinje bedre og med spesifikke stiler, 
+   og nav-baren justeres ved å bruke flexbox for å få riktig layout på små skjermer. */
+@media (max-width:579px) {
+    .menu {
+        list-style-type: none;
+        /* Fjerner punktene som var på menyen */
+        position: sticky;
+        padding-left: 0px;
+        /* Fjerner standard innrykk i menyen */
+    }
+
+    /* Ikon for burgermeny */
+    .menu-icon {
+        display: block;
+        background-image: url(../media/Hamburger_icon.png);
+        /* bilde fra https://no.m.wikipedia.org/wiki/Fil:Hamburger_icon.svg */
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+    }
+
+    /* Endre pekeren til en hånd */
+    .hamburger-toggle-container {
+        cursor: pointer;
+    }
+
+    /* Skjuler den listen som var der fra før ved å fjerne høyden */
+    .menu li {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    /* Når man trykker på burgermeny-ikonet, vises elementene i menyen */
+    #burger-toggle:checked~.menu li {
+        height: 1.2rem;
+        width: auto;
+        background-color: #2F4858;
+        padding: 15px;
+    }
+
+    /* Fikser nav-baren for visning på små skjermer */
+    nav {
+        display: flex;
+        height: 60px;
+    }
+
+}
